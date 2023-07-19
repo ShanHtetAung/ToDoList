@@ -67,7 +67,7 @@
     }
   }
 input{
-    flex: 1;;
+    flex: 1;
     background: transparent;
     border: none;
     outline: none;
@@ -76,7 +76,7 @@ input{
 .row button{
     border: none;
     outline: none;
-    padding: 16px 50px;
+    padding: 1em 2em;
     border-radius: 40px;
     background-color: var(--btn-color);
     color: var(--theme-color);
@@ -133,4 +133,19 @@ ul li span{
 }
 ul li span:hover{
     background: var(--border-color);
+}
+
+@media(max-width: 485px){
+    .row {
+        flex-direction: column;
+        background: transparent;
+        padding-left: 0;
+    }
+    .row input{
+        background-color: var(--border-color);
+        border-radius: 20px;
+        padding: 15px;
+        margin-bottom: 10px;
+    }
+    
 }
